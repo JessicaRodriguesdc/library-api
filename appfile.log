@@ -1,41 +1,32 @@
-2020-10-12 14:02:22.335  INFO 5184 --- [restartedMain] c.l.libraryapi.LibraryApiApplication     : Starting LibraryApiApplication on LAPTOP-9FP3VAQ9 with PID 5184 (started by Jéssica in C:\Users\Jéssica\Desktop\Jsk\Projects\Estudo_Java-Testes\Design de API's RestFul\Modulo 7-Logs, Métricas e Monitoramento da API com Actuator e Spring Boot Admin\library-api)
-2020-10-12 14:02:22.397  INFO 5184 --- [restartedMain] c.l.libraryapi.LibraryApiApplication     : No active profile set, falling back to default profiles: default
-2020-10-12 14:02:22.513  INFO 5184 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Jéssica\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/J%c3%a9ssica/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/J%c3%a9ssica/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/J%c3%a9ssica/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/J%c3%a9ssica/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/J%c3%a9ssica/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/J%c3%a9ssica/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
-2020-10-12 14:02:22.513  INFO 5184 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-10-12 14:02:22.513  INFO 5184 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-10-12 14:02:25.410  INFO 5184 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2020-10-12 14:02:25.545  INFO 5184 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 108ms. Found 2 repository interfaces.
-2020-10-12 14:02:26.172  INFO 5184 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-10-12 14:02:26.773  INFO 5184 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-10-12 14:02:26.789  INFO 5184 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-10-12 14:02:26.789  INFO 5184 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
-2020-10-12 14:02:26.990  INFO 5184 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-10-12 14:02:26.990  INFO 5184 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4477 ms
-2020-10-12 14:02:27.159  INFO 5184 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-10-12 14:02:27.507  INFO 5184 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-10-12 14:02:27.507  INFO 5184 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
-2020-10-12 14:02:27.723  INFO 5184 --- [restartedMain] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/jolokia' to jolokia-actuator-endpoint
-2020-10-12 14:02:27.977  INFO 5184 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-10-12 14:02:28.178  INFO 5184 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
-2020-10-12 14:02:28.594  INFO 5184 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-10-12 14:02:28.779  INFO 5184 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2020-10-12 14:02:31.202  INFO 5184 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-10-12 14:02:31.224  INFO 5184 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-10-12 14:02:31.325  INFO 5184 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-10-12 14:02:33.061  WARN 5184 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-10-12 14:02:33.531  INFO 5184 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
-2020-10-12 14:02:34.279  INFO 5184 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-12 14:02:34.734  INFO 5184 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
-2020-10-12 14:02:35.035  INFO 5184 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-12 14:02:35.051  INFO 5184 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-12 14:02:35.082  INFO 5184 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-12 14:02:35.684  INFO 5184 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_1
-2020-10-12 14:02:35.760  INFO 5184 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findUsingGET_1
-2020-10-12 14:02:35.865  INFO 5184 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-10-12 14:02:35.872  INFO 5184 --- [restartedMain] c.l.libraryapi.LibraryApiApplication     : Started LibraryApiApplication in 14.18 seconds (JVM running for 19.522)
-2020-10-12 14:02:37.016  INFO 5184 --- [RMI TCP Connection(5)-192.168.56.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-10-12 14:02:37.016  INFO 5184 --- [RMI TCP Connection(5)-192.168.56.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-10-12 14:02:37.031  INFO 5184 --- [RMI TCP Connection(5)-192.168.56.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
-2020-10-12 14:02:45.014  WARN 5184 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=spring-boot-application, managementUrl=http://LAPTOP-9FP3VAQ9:8080/actuator, healthUrl=http://LAPTOP-9FP3VAQ9:8080/actuator/health, serviceUrl=http://LAPTOP-9FP3VAQ9:8080/) at spring-boot-admin ([http://localhost:8081//instances]): I/O error on POST request for "http://localhost:8081/instances": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect. Further attempts are logged on DEBUG level
-2020-10-12 20:02:57.056  WARN 5184 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h24s458ms719µs700ns).
-2020-10-12 21:33:15.527  WARN 5184 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h30m38s207ms416µs600ns).
+2020-10-13 16:36:08.073  INFO 8688 --- [main] c.l.l.api.resource.BookControllerTest    : Starting BookControllerTest on LAPTOP-9FP3VAQ9 with PID 8688 (started by Jéssica in C:\Users\Jéssica\Desktop\Jsk\Projects\library-api)
+2020-10-13 16:36:08.135  INFO 8688 --- [main] c.l.l.api.resource.BookControllerTest    : The following profiles are active: test
+2020-10-13 16:36:31.129  INFO 8688 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-13 16:36:36.242  INFO 8688 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2020-10-13 16:36:36.242  INFO 8688 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-10-13 16:36:36.335  INFO 8688 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 62 ms
+2020-10-13 16:36:37.203  INFO 8688 --- [main] c.l.l.api.resource.BookControllerTest    : Started BookControllerTest in 33.051 seconds (JVM running for 47.298)
+2020-10-13 16:36:40.244  INFO 8688 --- [main] c.l.l.api.resource.BookController        :  Updating a book by id: 1 
+2020-10-13 16:36:42.186  INFO 8688 --- [main] c.l.l.api.resource.BookController        :  Updating a book by id: 1 
+2020-10-13 16:36:43.401  INFO 8688 --- [main] c.l.l.api.resource.BookController        :  creating a book for isbn: 001 
+2020-10-13 16:36:43.439  INFO 8688 --- [main] c.l.l.api.resource.BookController        :  Obtaining datails for book id: 1 
+2020-10-13 16:36:43.508  INFO 8688 --- [main] c.l.l.api.resource.BookController        :  creating a book for isbn: 001 
+2020-10-13 16:36:43.599  INFO 8688 --- [main] c.l.l.api.resource.BookController        :  Deleting a book by id: 1 
+2020-10-13 16:36:43.631  INFO 8688 --- [main] c.l.l.api.resource.BookController        :  Deleting a book by id: 1 
+2020-10-13 16:36:43.668  INFO 8688 --- [main] c.l.l.api.resource.BookController        :  Obtaining datails for book id: 1 
+2020-10-13 16:36:44.207  INFO 8688 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-13 16:45:44.372  INFO 11608 --- [main] c.l.l.api.resource.BookControllerTest    : Starting BookControllerTest on LAPTOP-9FP3VAQ9 with PID 11608 (started by Jéssica in C:\Users\Jéssica\Desktop\Jsk\Projects\library-api)
+2020-10-13 16:45:44.372  INFO 11608 --- [main] c.l.l.api.resource.BookControllerTest    : The following profiles are active: test
+2020-10-13 16:45:51.273  INFO 11608 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-13 16:45:52.695  INFO 11608 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2020-10-13 16:45:52.695  INFO 11608 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-10-13 16:45:52.726  INFO 11608 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 31 ms
+2020-10-13 16:45:52.836  INFO 11608 --- [main] c.l.l.api.resource.BookControllerTest    : Started BookControllerTest in 10.67 seconds (JVM running for 16.427)
+2020-10-13 16:45:54.080  INFO 11608 --- [main] c.l.l.api.resource.BookController        :  Updating a book by id: 1 
+2020-10-13 16:45:54.622  INFO 11608 --- [main] c.l.l.api.resource.BookController        :  Updating a book by id: 1 
+2020-10-13 16:45:54.669  INFO 11608 --- [main] c.l.l.api.resource.BookController        :  creating a book for isbn: 001 
+2020-10-13 16:45:54.700  INFO 11608 --- [main] c.l.l.api.resource.BookController        :  Obtaining datails for book id: 1 
+2020-10-13 16:45:54.731  INFO 11608 --- [main] c.l.l.api.resource.BookController        :  creating a book for isbn: 001 
+2020-10-13 16:45:54.763  INFO 11608 --- [main] c.l.l.api.resource.BookController        :  Deleting a book by id: 1 
+2020-10-13 16:45:54.794  INFO 11608 --- [main] c.l.l.api.resource.BookController        :  Deleting a book by id: 1 
+2020-10-13 16:45:54.825  INFO 11608 --- [main] c.l.l.api.resource.BookController        :  Obtaining datails for book id: 1 
+2020-10-13 16:45:55.028  INFO 11608 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
