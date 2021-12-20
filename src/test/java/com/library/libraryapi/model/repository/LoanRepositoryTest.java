@@ -32,7 +32,7 @@ public class LoanRepositoryTest {
 
     @Test
     @DisplayName("Deve verificar se existe emprestimo nao devolvido para o livro.")
-    public void existsByBookAndNotReturnedTest(){
+    public void exists_by_book_and_not_returned_test(){
         //cenario
         Loan loan = createAndPersistLoan(LocalDate.now());
         Book book = loan.getBook();
@@ -45,7 +45,7 @@ public class LoanRepositoryTest {
 
     @Test
     @DisplayName("Deve buscar emprestimo pelo isbn do livro ou customer")
-    public void findByBookIsbnOrCustomerTest(){
+    public void find_by_book_isbn_or_customer_test(){
         Loan loan = createAndPersistLoan(LocalDate.now());
 
         Page<Loan> result = repository.findByBookIsbnOrCustomer("123", "Jessica", PageRequest.of(0, 10));
@@ -59,7 +59,7 @@ public class LoanRepositoryTest {
 
     @Test
     @DisplayName("Deve obter empréstimos cuja data empréstimo for menor ou igual a tres dias atras e nao retornados")
-    public void findByLoanDateLessThanAndNotReturnedTest(){
+    public void find_by_loan_date_less_than_and_not_returned_test(){
         Loan land = createAndPersistLoan(LocalDate.now().minusDays(5));
 
         List<Loan> result = repository.findByLoanDateLessThanAndNotReturned(LocalDate.now().minusDays(4));
@@ -69,7 +69,7 @@ public class LoanRepositoryTest {
 
     @Test
     @DisplayName("Deve retornar vazio quando nao houver emprestimos atrasados")
-    public void notFindByLoanDateLessThanAndNotReturnedTest(){
+    public void not_find_by_loan_date_less_than_and_not_returned_test(){
         Loan land = createAndPersistLoan(LocalDate.now());
 
         List<Loan> result = repository.findByLoanDateLessThanAndNotReturned(LocalDate.now().minusDays(4));

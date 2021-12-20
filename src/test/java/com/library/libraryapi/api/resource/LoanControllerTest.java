@@ -56,7 +56,7 @@ public class LoanControllerTest {
 
     @Test
     @DisplayName("Deve realizar um emprestimo.")
-    public void createLoanTest() throws Exception {
+    public void create_loan_rest_test() throws Exception {
 
         LoanDto dto = LoanDto.builder().isbn("123").email("jessica@gmail.com").customer("jessica").build();
         String json = new ObjectMapper().writeValueAsString(dto);
@@ -81,7 +81,7 @@ public class LoanControllerTest {
 
     @Test
     @DisplayName("Deve retornar um erro ao tentar fazer emprestimo de um livro inexistente.")
-    public void InvalidIsbnCreateLoanTest() throws Exception{
+    public void invalid_isbn_create_loan_rest_test() throws Exception{
 
         LoanDto dto = LoanDto.builder().isbn("123").customer("jessica").build();
         String json = new ObjectMapper().writeValueAsString(dto);
@@ -104,7 +104,7 @@ public class LoanControllerTest {
 
     @Test
     @DisplayName("Deve retornar um erro ao tentar fazer emprestimo de um livro emprestado.")
-    public void loaneBookErrorOnCreateLoanTest() throws Exception{
+    public void loane_book_error_on_create_loan_rest_test() throws Exception{
 
         LoanDto dto = LoanDto.builder().isbn("123").customer("jessica").build();
         String json = new ObjectMapper().writeValueAsString(dto);
@@ -131,7 +131,7 @@ public class LoanControllerTest {
 
     @Test
     @DisplayName("Deve retornar um livro")
-    public void returnBookTest()  throws Exception{
+    public void return_book_rest_test()  throws Exception{
         //cenario { returned: true }
         ReturnedLoanDTO dto = ReturnedLoanDTO.builder().returned(true).build();
 
@@ -153,7 +153,7 @@ public class LoanControllerTest {
 
     @Test
     @DisplayName("Deve retornar 404 quando tentar devolver um livro inexistente.")
-    public void returnInexistentBookTest()  throws Exception{
+    public void return_inexistent_book_rest_test()  throws Exception{
         //cenario { returned: true }
         ReturnedLoanDTO dto = ReturnedLoanDTO.builder().returned(true).build();
 
@@ -176,7 +176,7 @@ public class LoanControllerTest {
 
     @Test
     @DisplayName("Deve filtrar Emprestimos")
-    public void findLoansTest() throws Exception {
+    public void find_loans_rest_test() throws Exception {
         //cenario
         Long id = 1l;
 
