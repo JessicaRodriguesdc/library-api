@@ -1,6 +1,5 @@
 package com.library.libraryapi.service;
 
-
 import com.library.libraryapi.api.dto.LoanFilterDTO;
 import com.library.libraryapi.exception.BusinessException;
 import com.library.libraryapi.model.entity.Book;
@@ -46,7 +45,7 @@ public class LoanServiceTest {
 
     @Test
     @DisplayName("Deve salvar um emprestimo")
-    public void saveLoanTest(){
+    public void save_loan_test(){
         Book book = Book.builder().id(1l).build();
         String customer = "Jessica";
         Loan savingLoan = Loan.builder()
@@ -74,7 +73,7 @@ public class LoanServiceTest {
 
     @Test
     @DisplayName("Deve lancar erro de negocio ao salvar um emprestimo com livro ja emprestimo")
-    public void loanedBookSaveTest(){
+    public void loaned_book_save_test(){
         Book book = Book.builder().id(1l).build();
         String customer = "Jessica";
         Loan savingLoan = Loan.builder()
@@ -96,7 +95,7 @@ public class LoanServiceTest {
 
     @Test
     @DisplayName("Deve obter as informacoes de um emprestimo pelo ID")
-    public void getLoanDetaisTest(){
+    public void get_loan_detais_test(){
         //cenario
         Long id = 1l;
 
@@ -121,7 +120,7 @@ public class LoanServiceTest {
 
     @Test
     @DisplayName("Deve atualizar um emprestimo.")
-    public void updateLoanTest(){
+    public void update_loan_test(){
         Loan loan  = createLoan();
         loan.setId(1l);
         loan.setReturned(true);
@@ -136,7 +135,7 @@ public class LoanServiceTest {
 
     @Test
     @DisplayName("Deve filtrar emprestimos pelas propriedades.")
-    public void findLoanTest(){
+    public void find_loan_test(){
         //cenario
 
         LoanFilterDTO loanFilterDTO = LoanFilterDTO.builder()

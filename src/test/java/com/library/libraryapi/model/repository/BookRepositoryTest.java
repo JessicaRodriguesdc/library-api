@@ -1,6 +1,5 @@
 package com.library.libraryapi.model.repository;
 
-
 import com.library.libraryapi.model.entity.Book;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -28,7 +27,7 @@ public class BookRepositoryTest {
 
     @Test
     @DisplayName("Deve retornar verdadeiro quando existir um livro na base com o isbn informado")
-    public void returnTrueWhenIsbnExists(){
+    public void return_true_when_isbn_exists_test(){
         //cenario
         String isbn = "123";
         Book book = createNewBook(isbn);
@@ -42,13 +41,9 @@ public class BookRepositoryTest {
 
     }
 
-    public static Book createNewBook(String isbn) {
-        return Book.builder().title("Aventuras").author("Jessica").isbn(isbn).build();
-    }
-
     @Test
     @DisplayName("Deve retornar falso quando nao existir um livro na base com o isbn informado")
-    public void returnFalseWhenIsbnDoesentExist(){
+    public void return_false_when_isbn_doesent_exist_test(){
         //cenario
         String isbn = "123";
 
@@ -62,7 +57,7 @@ public class BookRepositoryTest {
 
     @Test
     @DisplayName("Deve obter um livro por id")
-    public void findByIdTest(){
+    public void find_by_id_test(){
         //cenario
         Book book =createNewBook("123");
         entityManager.persist(book);
@@ -76,7 +71,7 @@ public class BookRepositoryTest {
 
     @Test
     @DisplayName("Deve salvar um livro.")
-    public void saveBookTest(){
+    public void save_book_test(){
 
         Book book = createNewBook("123");
 
@@ -87,7 +82,7 @@ public class BookRepositoryTest {
 
     @Test
     @DisplayName("Deve deletar um livro.")
-    public void deleteBookTest(){
+    public void delete_book_test(){
 
         Book book = createNewBook("123");
         entityManager.persist(book);
@@ -99,5 +94,9 @@ public class BookRepositoryTest {
         Book deletedBook = entityManager.find(Book.class,book.getId());
 
         assertThat(deletedBook).isNull();
+    }
+
+    public static Book createNewBook(String isbn) {
+        return Book.builder().title("Aventuras").author("Jessica").isbn(isbn).build();
     }
 }

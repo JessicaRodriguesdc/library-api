@@ -33,5 +33,8 @@ public class Book {
     @OneToMany(mappedBy = "book")
     private List<Loan> loans;
 
-
+    public Book withLoans(List<Loan> loans){
+        this.loans = loans;
+        return this;
+    }
 }

@@ -36,5 +36,9 @@ public class Loan {
     @Column
     private Boolean returned;
 
+    public Loan withBook(Book book){
+        this.book = book;
+        return this;
+    }
 
 }
